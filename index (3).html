@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darmowy Przewodnik: Jak Wybrać Termowizor do Polowania w 2026 | ElektroManiacy.pl</title>
+    <meta name="description" content="Pobierz darmowy przewodnik po termowizorach myśliwskich. Porównanie 7 modeli, test terenowy, konkretne rekomendacje cenowe. Bez marketingowego bełkotu.">
+    <meta property="og:title" content="Jak Wybrać Termowizor do Polowania w 2026 — Darmowy Przewodnik">
+    <meta property="og:description" content="7 modeli, testy terenowe, konkretne rekomendacje. Przewodnik od praktyków, nie handlowców.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🔭</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0c0f;
+            --bg-secondary: #111518;
+            --bg-card: #161a1f;
+            --bg-card-hover: #1c2127;
+            --text-primary: #e8e6e1;
+            --text-secondary: #9a978f;
+            --text-muted: #6b6860;
+            --accent: #e8772e;
+            --accent-glow: rgba(232, 119, 46, 0.15);
+            --accent-hover: #f5923e;
+            --thermal-hot: #ff6b35;
+            --thermal-warm: #ffb347;
+            --thermal-cool: #4a90d9;
+            --green-confirm: #4caf50;
+            --border: rgba(255,255,255,0.06);
+            --font-display: 'Oswald', sans-serif;
+            --font-body: 'Source Sans 3', sans-serif;
+            --radius: 6px;
+            --max-w: 680px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* ═══════════════════════════════════════
+           BACKGROUND ATMOSPHERE
+        ═══════════════════════════════════════ */
+        .page-bg {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 800px 600px at 20% 10%, rgba(232,119,46,0.04), transparent),
+                radial-gradient(ellipse 600px 400px at 80% 90%, rgba(74,144,217,0.03), transparent),
+                var(--bg-primary);
+        }
+
+        .noise-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            opacity: 0.025;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+
+        /* ═══════════════════════════════════════
+           LAYOUT
+        ═══════════════════════════════════════ */
+        .container {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ═══════════════════════════════════════
+           TOP BAR
+        ═══════════════════════════════════════ */
+        .topbar {
+            padding: 18px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .topbar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        .topbar-tag {
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* ═══════════════════════════════════════
+           HERO
+        ═══════════════════════════════════════ */
+        .hero {
+            padding: 56px 0 40px;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: var(--accent-glow);
+            border: 1px solid rgba(232,119,46,0.2);
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 6vw, 48px);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+        }
+        .hero h1 em {
+            font-style: normal;
+            color: var(--accent);
+        }
+        .hero-sub {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 520px;
+            margin: 0 auto 36px;
+            line-height: 1.65;
+        }
+
+        /* ═══════════════════════════════════════
+           THERMAL MOCKUP
+        ═══════════════════════════════════════ */
+        .mockup-section {
+            position: relative;
+            margin: 0 auto 48px;
+            max-width: 480px;
+        }
+        .mockup-frame {
+            position: relative;
+            background: linear-gradient(145deg, #1a1e24, #12161b);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px 28px;
+            overflow: hidden;
+        }
+        .mockup-frame::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--thermal-cool), var(--thermal-warm), var(--thermal-hot));
+        }
+        .mockup-eyebrow {
+            font-family: var(--font-display);
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        .mockup-title {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+        .mockup-title span { color: var(--accent); }
+        .mockup-subtitle {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+        .mockup-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        .mockup-stat {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 14px 10px;
+            text-align: center;
+        }
+        .mockup-stat-num {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .mockup-stat-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 4px;
+        }
+        .mockup-format {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .mockup-format svg { flex-shrink: 0; }
+
+        /* ═══════════════════════════════════════
+           BENEFITS
+        ═══════════════════════════════════════ */
+        .benefits {
+            padding: 0 0 48px;
+        }
+        .benefits-heading {
+            font-family: var(--font-display);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 18px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .benefit-item:last-child { border-bottom: none; }
+        .benefit-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: var(--accent-glow);
+            border: 1px solid rgba(232,119,46,0.15);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+        .benefit-icon svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent);
+        }
+        .benefit-text {
+            font-size: 16px;
+            color: var(--text-primary);
+            line-height: 1.55;
+        }
+        .benefit-text strong {
+            font-weight: 600;
+        }
+
+        /* ═══════════════════════════════════════
+           FORM SECTION
+        ═══════════════════════════════════════ */
+        .form-section {
+            padding: 0 0 48px;
+        }
+        .form-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 36px 28px;
+            position: relative;
+            overflow: hidden;
+        }
+        .form-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%; transform: translateX(-50%);
+            width: 120px;
+            height: 2px;
+            background: var(--accent);
+        }
+        .form-label {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+        .form-sublabel {
+            font-size: 15px;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        .input-group {
+            margin-bottom: 16px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+        }
+        .input-group input[type="email"] {
+            width: 100%;
+            padding: 14px 18px;
+            background: var(--bg-primary);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .input-group input[type="email"]::placeholder {
+            color: var(--text-muted);
+        }
+        .input-group input[type="email"]:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+        .input-error {
+            font-size: 13px;
+            color: #e85d4a;
+            margin-top: 6px;
+            display: none;
+        }
+
+        .consent-group {
+            margin-bottom: 24px;
+        }
+        .consent-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            cursor: pointer;
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        .consent-label input[type="checkbox"] {
+            flex-shrink: 0;
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+            accent-color: var(--accent);
+            cursor: pointer;
+        }
+        .consent-label a {
+            color: var(--text-secondary);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .cta-btn {
+            display: block;
+            width: 100%;
+            padding: 16px 32px;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius);
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+            position: relative;
+        }
+        .cta-btn:hover {
+            background: var(--accent-hover);
+            box-shadow: 0 4px 24px rgba(232,119,46,0.25);
+        }
+        .cta-btn:active {
+            transform: scale(0.98);
+        }
+        .cta-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .cta-sub {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .cta-sub svg { flex-shrink: 0; }
+
+        /* ═══════════════════════════════════════
+           SOCIAL PROOF
+        ═══════════════════════════════════════ */
+        .social-proof {
+            padding: 0 0 48px;
+        }
+        .proof-heading {
+            font-family: var(--font-display);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .testimonial {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .testimonial-text {
+            font-size: 15px;
+            color: var(--text-secondary);
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2a3040, #1a2030);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--accent);
+        }
+        .testimonial-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .testimonial-role {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .testimonial-stars {
+            color: var(--thermal-warm);
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .ceneo-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-top: 16px;
+        }
+        .ceneo-score {
+            font-family: var(--font-display);
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--green-confirm);
+        }
+        .ceneo-meta {
+            text-align: left;
+        }
+        .ceneo-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .ceneo-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* ═══════════════════════════════════════
+           AUTHOR
+        ═══════════════════════════════════════ */
+        .author-section {
+            padding: 0 0 48px;
+            text-align: center;
+        }
+        .author-avatar-lg {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-glow), var(--bg-card));
+            border: 2px solid rgba(232,119,46,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .author-name {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+        .author-title {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        .author-bio {
+            font-size: 14px;
+            color: var(--text-muted);
+            max-width: 440px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ═══════════════════════════════════════
+           FOOTER
+        ═══════════════════════════════════════ */
+        footer {
+            padding: 32px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        /* ═══════════════════════════════════════
+           EXIT INTENT POPUP
+        ═══════════════════════════════════════ */
+        .popup-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            animation: fadeIn 0.25s ease;
+        }
+        .popup-overlay.active { display: flex; }
+
+        .popup-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            max-width: 480px;
+            width: 100%;
+            padding: 40px 32px;
+            position: relative;
+            animation: slideUp 0.3s ease;
+        }
+        .popup-close {
+            position: absolute;
+            top: 16px; right: 16px;
+            width: 36px; height: 36px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            color: var(--text-muted);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+            font-size: 18px;
+        }
+        .popup-close:hover { background: rgba(255,255,255,0.1); }
+
+        .popup-badge {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .popup-heading {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        .popup-text {
+            font-size: 15px;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        .popup-input {
+            width: 100%;
+            padding: 14px 18px;
+            background: var(--bg-primary);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 16px;
+            outline: none;
+            margin-bottom: 12px;
+            transition: border-color 0.2s;
+        }
+        .popup-input:focus {
+            border-color: var(--accent);
+        }
+        .popup-cta {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius);
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-bottom: 12px;
+        }
+        .popup-cta:hover { background: var(--accent-hover); }
+        .popup-dismiss {
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            cursor: pointer;
+            border: none;
+            background: none;
+            width: 100%;
+            padding: 8px;
+        }
+        .popup-dismiss:hover { color: var(--text-secondary); }
+        .popup-proof {
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 16px;
+        }
+
+        /* ═══════════════════════════════════════
+           THANK YOU PAGE
+        ═══════════════════════════════════════ */
+        .thankyou-page { display: none; }
+        .thankyou-page.active { display: block; }
+        .landing-page.hidden { display: none; }
+
+        .ty-hero {
+            padding: 72px 0 40px;
+            text-align: center;
+        }
+        .ty-icon {
+            width: 72px;
+            height: 72px;
+            background: rgba(76,175,80,0.12);
+            border: 2px solid rgba(76,175,80,0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 32px;
+            animation: scaleIn 0.4s ease;
+        }
+        .ty-heading {
+            font-family: var(--font-display);
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            line-height: 1.15;
+        }
+        .ty-heading em {
+            font-style: normal;
+            color: var(--green-confirm);
+        }
+        .ty-instructions {
+            font-size: 17px;
+            color: var(--text-secondary);
+            max-width: 460px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        .ty-download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 36px;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius);
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .ty-download-btn:hover {
+            background: var(--accent-hover);
+            box-shadow: 0 4px 24px rgba(232,119,46,0.25);
+        }
+
+        .ty-next {
+            padding: 48px 0;
+        }
+        .ty-next-heading {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .ty-steps {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        .ty-step {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .ty-step:hover {
+            border-color: rgba(232,119,46,0.2);
+            background: var(--bg-card-hover);
+        }
+        .ty-step-icon {
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            background: var(--accent-glow);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+        .ty-step-title {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .ty-step-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .ty-share {
+            padding: 40px 0 48px;
+            text-align: center;
+        }
+        .ty-share-text {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        .ty-share-btns {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .ty-share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .ty-share-btn:hover {
+            border-color: var(--accent);
+            color: var(--text-primary);
+        }
+
+        /* ═══════════════════════════════════════
+           ANIMATIONS
+        ═══════════════════════════════════════ */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ═══════════════════════════════════════
+           RESPONSIVE
+        ═══════════════════════════════════════ */
+        @media (max-width: 600px) {
+            .container { padding: 0 18px; }
+            .hero { padding: 40px 0 32px; }
+            .mockup-stats { grid-template-columns: 1fr; }
+            .form-card { padding: 28px 20px; }
+            .popup-box { padding: 32px 20px; }
+            .topbar-tag { display: none; }
+            .ceneo-bar { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-bg"></div>
+<div class="noise-overlay"></div>
+
+<!-- ═══════════════════════════════════════
+     LANDING PAGE
+═══════════════════════════════════════ -->
+<div class="landing-page" id="landingPage">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <a class="logo" href="#">Elektro<span>Maniacy</span>.pl</a>
+            <span class="topbar-tag">Toruń • od 2017</span>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero container">
+        <div class="hero-badge">Darmowy przewodnik PDF — 38 stron</div>
+        <h1>Jak wybrać <em>termowizor</em> do polowania w 2026</h1>
+        <p class="hero-sub">7 modeli przetestowanych w terenie. Konkretne rekomendacje cenowe od 2 800 do 13 000 PLN. Bez marketingowego bełkotu.</p>
+    </section>
+
+    <!-- MOCKUP -->
+    <section class="mockup-section container fade-in">
+        <div class="mockup-frame">
+            <div class="mockup-eyebrow">ElektroManiacy.pl • Edycja 2026</div>
+            <div class="mockup-title">Przewodnik po <span>termowizji</span> myśliwskiej</div>
+            <div class="mockup-subtitle">Testy terenowe • Porównania • Rekomendacje</div>
+            <div class="mockup-stats">
+                <div class="mockup-stat">
+                    <div class="mockup-stat-num">7</div>
+                    <div class="mockup-stat-label">Modeli</div>
+                </div>
+                <div class="mockup-stat">
+                    <div class="mockup-stat-num">38</div>
+                    <div class="mockup-stat-label">Stron</div>
+                </div>
+                <div class="mockup-stat">
+                    <div class="mockup-stat-num">12</div>
+                    <div class="mockup-stat-label">Testów nocnych</div>
+                </div>
+            </div>
+            <div class="mockup-format">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Format PDF • Natychmiastowy dostęp po zapisie
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits container fade-in">
+        <div class="benefits-heading">Co znajdziesz w przewodniku</div>
+
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="benefit-text"><strong>Skrócisz research z 6 tygodni do 1 wieczoru</strong> — tabela porównawcza 7 modeli Hikmicro, Nocpix i Pard z cenami, parametrami matryc i oceną terenową.</div>
+        </div>
+
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="benefit-text"><strong>Zobaczysz realne zrzuty z obiektywów</strong> — zdjęcia termowizyjne z nocnych testów w lesie, nie renders z katalogu producenta.</div>
+        </div>
+
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="benefit-text"><strong>Unikniesz 5 najdroższych błędów</strong> przy zakupie pierwszego termowizora — każdy z nich kosztuje minimum 1 500 PLN niepotrzebnych wydatków.</div>
+        </div>
+
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+            </div>
+            <div class="benefit-text"><strong>Dostaniesz 3 konkretne rekomendacje</strong> — „najlepszy do 4 000 PLN", „najlepszy stosunek ceny do jakości" i „bezwzględnie najlepszy na rynku".</div>
+        </div>
+    </section>
+
+    <!-- OPT-IN FORM -->
+    <section class="form-section container fade-in" id="formSection">
+        <div class="form-card">
+            <div class="form-label">Pobierz darmowy przewodnik</div>
+            <div class="form-sublabel">Wpisz e-mail — wyślemy link do pobrania w ciągu 2 minut.</div>
+
+            <form id="optinForm" novalidate>
+                <div class="input-group">
+                    <label for="emailInput">Twój adres e-mail</label>
+                    <input
+                        type="email"
+                        id="emailInput"
+                        name="email"
+                        placeholder="jan.kowalski@gmail.com"
+                        autocomplete="email"
+                        required
+                        autofocus
+                    >
+                    <div class="input-error" id="emailError">Podaj prawidłowy adres e-mail</div>
+                </div>
+
+                <div class="consent-group">
+                    <label class="consent-label">
+                        <input type="checkbox" id="consentCheck" required>
+                        <span>Zgadzam się na przetwarzanie danych osobowych w celu przesłania przewodnika. <a href="#" target="_blank">Polityka prywatności</a></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="cta-btn" id="ctaBtn">
+                    Wyślij mi przewodnik
+                </button>
+            </form>
+
+            <div class="cta-sub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Bez spamu. Wypisujesz się jednym kliknięciem.
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="social-proof container fade-in">
+        <div class="proof-heading">Opinie klientów ElektroManiacy</div>
+
+        <div class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-text">"Kupowałem Hikmicro Lynx po obejrzeniu ich testu na YouTube. Doradztwo na 5 — odpowiedzieli na pytania, których sam bym nie zadał. Sprzęt przyszedł następnego dnia."</div>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">MK</div>
+                <div>
+                    <div class="testimonial-name">Marek K.</div>
+                    <div class="testimonial-role">Myśliwy, Koło Łowieckie Bażant</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-text">"Szukałem termowizora do obserwacji — nie do strzelania. Chłopaki z Elektromaniacy odwiedli mnie od przepłacenia 4 tysiące. To się nie zdarza w sklepach."</div>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">TP</div>
+                <div>
+                    <div class="testimonial-name">Tomasz P.</div>
+                    <div class="testimonial-role">Fotograf przyrody, Kaszuby</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ceneo-bar">
+            <div class="ceneo-score">4.8</div>
+            <div class="ceneo-meta">
+                <div class="ceneo-label">Ocena na Ceneo</div>
+                <div class="ceneo-sub">94% pozytywnych opinii • 1 028+ recenzji</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTHOR -->
+    <section class="author-section container fade-in">
+        <div class="author-avatar-lg">EM</div>
+        <div class="author-name">Zespół ElektroManiacy.pl</div>
+        <div class="author-title">Specjaliści od optyki myśliwskiej — Toruń, od 2017</div>
+        <div class="author-bio">Testujemy sprzęt w terenie, a nie na biurku. Nasz kanał YouTube to recenzje, porównania i testy nocne — bo wiemy, że wydanie kilku tysięcy na termowizor wymaga czegoś więcej niż opis z katalogu.</div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            © 2026 ElektroManiacy.pl Sp. z o.o. • Toruń • <a href="#">Polityka prywatności</a>
+        </div>
+    </footer>
+</div>
+
+<!-- ═══════════════════════════════════════
+     EXIT-INTENT POPUP
+═══════════════════════════════════════ -->
+<div class="popup-overlay" id="exitPopup">
+    <div class="popup-box">
+        <button class="popup-close" id="popupClose">✕</button>
+        <div class="popup-badge">🔭</div>
+        <div class="popup-heading">Zanim wyjdziesz — weź przewodnik</div>
+        <div class="popup-text">38 stron porównań i testów terenowych, które skrócą Twój research o tygodnie. Za darmo.</div>
+        <input type="email" class="popup-input" id="popupEmail" placeholder="Twój najlepszy e-mail" autocomplete="email">
+        <button class="popup-cta" id="popupCta">Tak, wyślij mi to</button>
+        <button class="popup-dismiss" id="popupDismiss">Nie, dziękuję — wolę szukać sam</button>
+        <div class="popup-proof">★★★★★ „Najlepszy materiał o termowizji jaki czytałem" — Marek K.</div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     THANK YOU PAGE
+═══════════════════════════════════════ -->
+<div class="thankyou-page" id="thankyouPage">
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <a class="logo" href="#">Elektro<span>Maniacy</span>.pl</a>
+            <span class="topbar-tag">Toruń • od 2017</span>
+        </div>
+    </div>
+
+    <section class="ty-hero container">
+        <div class="ty-icon">✓</div>
+        <h1 class="ty-heading">Gotowe! <em>Sprawdź skrzynkę</em></h1>
+        <p class="ty-instructions">
+            Za 2-5 minut otrzymasz e-mail z linkiem do pobrania przewodnika.
+            Sprawdź również folder SPAM — czasem tam trafia.
+        </p>
+        <a href="#" class="ty-download-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Lub pobierz natychmiast tutaj
+        </a>
+    </section>
+
+    <section class="ty-next container">
+        <div class="ty-next-heading">Co możesz zrobić teraz</div>
+        <div class="ty-steps">
+            <a href="https://www.youtube.com/@elektromaniacy" target="_blank" class="ty-step">
+                <div class="ty-step-icon">▶</div>
+                <div>
+                    <div class="ty-step-title">Obejrzyj testy na YouTube</div>
+                    <div class="ty-step-desc">Recenzje wideo, porównania i testy terenowe termowizorów — widzisz sprzęt w akcji, nie na zdjęciu z katalogu.</div>
+                </div>
+            </a>
+            <a href="https://elektromaniacy.pl/pl/menu/noktowizja-termowizja-1739.html" target="_blank" class="ty-step">
+                <div class="ty-step-icon">🔭</div>
+                <div>
+                    <div class="ty-step-title">Zobacz ofertę termowizji</div>
+                    <div class="ty-step-desc">Hikmicro, Nocpix, Pard, Thermtec — pełna oferta z dostawą od 999 zł gratis.</div>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/sklep.elektromaniacy/" target="_blank" class="ty-step">
+                <div class="ty-step-icon">👥</div>
+                <div>
+                    <div class="ty-step-title">Dołącz do społeczności na FB</div>
+                    <div class="ty-step-desc">3 200+ osób. Nowości, promocje i dyskusje o sprzęcie.</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="ty-share container">
+        <div class="ty-share-text">Znasz kogoś, kto szuka termowizora? Prześlij mu ten przewodnik:</div>
+        <div class="ty-share-btns">
+            <a href="#" class="ty-share-btn" onclick="return false;">📘 Facebook</a>
+            <a href="#" class="ty-share-btn" onclick="return false;">✉️ E-mail</a>
+            <a href="#" class="ty-share-btn" onclick="return false;">💬 Messenger</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            © 2026 ElektroManiacy.pl Sp. z o.o. • Toruń • <a href="#">Polityka prywatności</a>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // ═══════════════════════════════════════
+    // SCROLL FADE-IN
+    // ═══════════════════════════════════════
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // ═══════════════════════════════════════
+    // FORM VALIDATION & SUBMIT
+    // ═══════════════════════════════════════
+    const form = document.getElementById('optinForm');
+    const emailInput = document.getElementById('emailInput');
+    const emailError = document.getElementById('emailError');
+    const consentCheck = document.getElementById('consentCheck');
+    const ctaBtn = document.getElementById('ctaBtn');
+
+    function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function showError(msg) {
+        emailError.textContent = msg;
+        emailError.style.display = 'block';
+        emailInput.style.borderColor = '#e85d4a';
+    }
+
+    function clearError() {
+        emailError.style.display = 'none';
+        emailInput.style.borderColor = 'rgba(255,255,255,0.1)';
+    }
+
+    emailInput.addEventListener('input', clearError);
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        clearError();
+
+        const email = emailInput.value.trim();
+
+        if (!email) {
+            showError('Podaj adres e-mail');
+            emailInput.focus();
+            return;
+        }
+        if (!validateEmail(email)) {
+            showError('Podaj prawidłowy adres e-mail');
+            emailInput.focus();
+            return;
+        }
+        if (!consentCheck.checked) {
+            showError('Zaznacz zgodę na przetwarzanie danych');
+            return;
+        }
+
+        // Simulate submission
+        ctaBtn.disabled = true;
+        ctaBtn.textContent = 'Wysyłam...';
+
+        setTimeout(() => {
+            showThankYou();
+        }, 800);
+    });
+
+    function showThankYou() {
+        document.getElementById('landingPage').classList.add('hidden');
+        document.getElementById('thankyouPage').classList.add('active');
+        document.getElementById('exitPopup').classList.remove('active');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        popupShown = true; // Prevent popup after conversion
+    }
+
+    // ═══════════════════════════════════════
+    // EXIT-INTENT POPUP
+    // ═══════════════════════════════════════
+    let popupShown = false;
+    const popup = document.getElementById('exitPopup');
+
+    document.addEventListener('mouseout', function(e) {
+        if (e.clientY < 5 && !popupShown && !document.getElementById('thankyouPage').classList.contains('active')) {
+            popup.classList.add('active');
+            popupShown = true;
+            setCookie('em_popup', '1', 14);
+        }
+    });
+
+    // Also trigger after 50s on mobile (no mouse exit)
+    setTimeout(() => {
+        const scrolled = window.scrollY > document.body.scrollHeight * 0.4;
+        if (!popupShown && scrolled && !document.getElementById('thankyouPage').classList.contains('active')) {
+            popup.classList.add('active');
+            popupShown = true;
+        }
+    }, 50000);
+
+    document.getElementById('popupClose').addEventListener('click', () => popup.classList.remove('active'));
+    document.getElementById('popupDismiss').addEventListener('click', () => popup.classList.remove('active'));
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) popup.classList.remove('active');
+    });
+
+    document.getElementById('popupCta').addEventListener('click', function() {
+        const email = document.getElementById('popupEmail').value.trim();
+        if (!email || !validateEmail(email)) {
+            document.getElementById('popupEmail').style.borderColor = '#e85d4a';
+            return;
+        }
+        showThankYou();
+    });
+
+    // ═══════════════════════════════════════
+    // COOKIE HELPER
+    // ═══════════════════════════════════════
+    function setCookie(name, value, days) {
+        const d = new Date();
+        d.setTime(d.getTime() + days * 86400000);
+        document.cookie = name + '=' + value + ';expires=' + d.toUTCString() + ';path=/';
+    }
+    function getCookie(name) {
+        const v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+        return v ? v[2] : null;
+    }
+
+    // Check if popup was already shown
+    if (getCookie('em_popup')) popupShown = true;
+</script>
+
+</body>
+</html>
